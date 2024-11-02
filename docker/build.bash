@@ -77,7 +77,7 @@ docker build --rm -t $image_plus_tag --build-arg base=$base --build-arg user_id=
 echo "Built $image_plus_tag"
 
 # If building the tutorial image
-if [[ "$image_name" == icra2023_tutorial ]]; then
+if [[ "$image_name" == humble ]]; then
   # DockerHub repo name
   repo_plus_tag_suffix="osrf/icra2023_ros2_gz_tutorial:tutorial$tag_suffix"
   docker tag $image_plus_tag $repo_plus_tag_suffix
